@@ -95,6 +95,13 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             rgb_matrix_set_color(LED_N, RGB_RED);
 	}
 
+	// Indicate GUI Key Status
+	if (keymap_config.no_gui) {
+            rgb_matrix_set_color(LED_LWIN, RGB_RED);
+	} else {
+            rgb_matrix_set_color(LED_LWIN, RGB_GREEN);
+	}
+
 
     } else {
 
