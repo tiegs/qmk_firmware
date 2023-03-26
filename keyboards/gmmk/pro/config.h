@@ -116,12 +116,14 @@
 
 /* 1000Hz USB polling - it's the default on stock firmware */
 #define USB_POLLING_INTERVAL_MS 1
+//#define USB_POLLING_INTERVAL_MS 2
 
 /* Send up to 4 key press events per scan */
 #define QMK_KEYS_PER_SCAN 4
 
 /* Set debounce time to 5ms */
-#define DEBOUNCE 5
+//#define DEBOUNCE 5
+#define DEBOUNCE 10
 
 /* Force NKRO on boot up regardless of the setting saved in the EEPROM (uncomment to enable it) */
 // #define FORCE_NKRO
